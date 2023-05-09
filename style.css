@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: #fff;
+  --menu-color: #2f281e;
+  --text-color: #544837;
+  --first-button-color: #173a56;
+  --second-button-color: #ff9900;
+  --second-button-bg: #bcd0e5;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  /*display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;*/
+}
+.main-content {
+  min-height: 65vh;
+}
+a {
+  text-decoration: none;
+}
+
+/*-----Header------*/
+
+header {
+  padding: 14.5px 0;
+}
+.container {
+  width: 1124px;
+  margin: 0 auto;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  margin-right: 14px;
+}
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  width: 187px;
+  height: 32px;
+}
+.logo-wrap > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+.nav-menu > li {
+  color: var(--menu-color);
+  font-size: 14px;
+  line-height: 28px;
+}
+.buttons-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.buttons-wrap > a {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 11px 22px;
+  transition: all 0.5s ease;
+}
+.sign-in {
+  border: 1px solid var(--second-button-bg);
+  border-radius: 4px;
+  color: var(--first-button-color);
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+
+.sign-in:hover {
+  background-color: var(--first-button-color);
+  color: var(--second-button-bg);
+  border: 1px solid var(--first-button-color);
+}
+.sign-up {
+  border: 1px solid var(--second-button-color);
+  background-color: var(--second-button-color);
+  color: var(--bg);
+  border-radius: 4px;
+  padding: 11px 26px;
+}
+
+.sign-up:hover {
+  background-color: var(--bg);
+  color: var(--second-button-color);
+}
+/*********************BANNER******************/
+.banner {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.banner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-text {
+  width: 46%;
+  margin-top: 83px;
+  display: flex;
+  flex-direction: column;
+}
+.banner-image {
+  /*display: flex;*/
+  width: 54%;
+}
+.banner-image > img {
+  /*display: flex;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h1 {
+  font-size: 44px;
+  line-height: 54px;
+  color: var(--menu-color);
+}
+.banner-parag {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-right: 60px;  /*.............................WARNING..................................*/
+}
+.banner-buttons {
+  margin-left: 0;
+  display: flex;
+  gap: 30px;
+}
+.banner-first-button {
+  font-weight: 700;
+  line-height: 24px;
+  padding: 14px 40px;
+}
+.watch {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--second-button-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8.5px;
+}
+.watch-p {
+  line-height: 1;
+  border-bottom: 2px solid rgb(255, 153, 0, 0.4);
+}
+ /****************************************Footer*****************************************/
+ /*footer {
+  margin-bottom: 120px;
+}*/
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(188, 208, 229, 0.496913);
+}
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 95px;
+  margin-top: 103px;
+}
+.footer_info ul {
+  list-style: none;
+}
+.footer_info ul li {
+  display: flex;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 10px;
+  color: var(--text-color);
+}
+.footer_logo {
+  width: 186px;
+}
+.footer_links {
+  width: 132px;
+}
+.list_links {
+  margin-top: 36px;
+}
+.list_stuff {
+  margin-top: 35px;
+}
+h3 {
+  width: 284px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--menu-color);
+}
+.footer_stuff {
+  width: 192px;
+}
+.footer_form {
+  width: 330px;
+}
+form {
+  display: table-caption;
+}
+.footer_form > p {
+  color: var(--second-button-bg);
+  width: 329px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 28px;
+  border: solid 1px var(--second-button-bg);
+  padding-top: 10px;
+  padding-left: 5px;
+  margin-top: 34px;
+  margin-bottom: 18px;
+}
+.btn_footer {
+  border: Solid 1px var(--second-button-color);
+  border-radius: 4px;
+  width: 132px;
+  height: 39px;
+  background-color: var(--second-button-color);
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn_footer:hover {
+  background-color: var(--bg);
+  color: var(--second-button-color);
+  transition: all 0.5s ease;
+}
+/*===================Superpower--section==================*/
+.superpower {
+  position: relative;
+}
+.superpower::before {
+  content:"";
+  position: absolute;
+  top: 20px;
+  left:0;
+  background-image: url("image/bg.svg");
+  background-position: inherit;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.superpower-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+  color: rgba(47, 40, 30, 1);
+  text-align: center;
+} 
+h2 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 700;
+}
+.superpower-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 46px;
+  position: relative;
+}
+.superpower-wrap__item > img {
+  margin-bottom: 30px;
+}
+/*h5 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 33px;
+  color: var(--menu-color);
+  margin-bottom: 13px;
+}*/
+.superpower-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 34px;
+  padding-bottom: 90px;
+}
+.superpower-button > a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*----------------------------Superhero-content-----------------------------*/
+.second_container {
+  width: 90%;
+  position: relative;
+  display: flex;
+}
+.superhero {
+  position: relative;
+  padding-bottom: 100px;
+}
+.superhero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+ 
+  background-image: url("image/superhero.svg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.people {
+  width: 1118px;
+  height: 613px;
+  position: relative;
+  margin: auto;
+  padding-bottom: 135px;
+}
+/*--------------------Person-superhero-content--------------------------*/
+.person {
+  width: 304px;
+  height: 139px;
+  background-image: url(comments/person.png);
+  background-size: 98px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-position: left;
+  background-position-y: bottom;
+  align-items: center;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.person_icon {
+  height: 53px;
+  position: relative;
+  width: 263px;
+
+  margin-right: -81px;
+  margin-top: 14px;
+}
+.oval_mini {
+  margin-left: 20px;
+  margin-top: -29px;
+  margin-left: -147px;
+}
+.person_text {
+  position: absolute;
+  position: absolute;
+  margin-top: -54px;
+  margin-left: 17px;
+}
+/*--------------Person_1--Superhero-content--------------------------*/
+.person_1 {
+  width: 304px;
+  height: 139px;
+  background-image: url(comments/person1.png);
+  background-size: 98px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-position: right;
+  background-position-y: bottom;
+  align-items: center;
+  margin-left: 682px;
+  margin-top: 113px;
+  position: absolute;
+}
+.person_1_icon {
+  height: 53px;
+  position: relative;
+  width: 263px;
+  margin-left: -3px;
+}
+.oval_mini1 {
+  margin-top: -22px;
+  margin-left: 154px;
+}
+.person_1_text {
+  position: absolute;
+  margin-top: -54px;
+  margin-left: 9px;
+}
+/*-----------------------------Person_2--superhero-content-------------------------*/
+.person_2 {
+  width: 304px;
+  height: 139px;
+  background-image: url(comments/person2.png);
+  background-size: 98px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-position: right;
+  background-position-y: bottom;
+  align-items: center;
+  position: absolute;
+  margin-top: 468px;
+}
+.person_2_icon {
+  height: 53px;
+  position: relative;
+  width: 263px;
+
+  margin-right: 48px;
+  margin-top: 14px;
+}
+.oval_mini2 {
+  margin-top: -29px;
+  margin-left: 138px;
+}
+.person_2_text {
+  position: absolute;
+  margin-top: -54px;
+  margin-left: 32px;
+}
+.superhero-text {
+  position: relative;
+  width: 542px;
+  height: 154px;
+  margin: auto;
+  bottom: 350px;
+}
+.superhero-text>h2 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(47, 40, 30, 1);
+}
+.superhero-p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 26px;
+  font-weight: 500;
+  color:rgba(86, 117, 146, 1);
+  margin-top: 20px;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 45px;
+  padding-bottom: 390px;
+}
+.contact-button > a {
+  text-transform: inherit;
+  font-weight: 600;
+}
+/*-----------------------Person_3-Superhero-content--------------------------*/
+.person_3 {
+  width: 304px;
+  height: 139px;
+  background-image: url(comments/person3.png);
+  background-size: 98px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-position: right;
+  background-position-y: bottom;
+  align-items: center;
+  position: absolute;
+  margin-top: 558px;
+  margin-left: 415px;
+}
+.person_3_icon {
+  height: 53px;
+  position: relative;
+  width: 306px;
+
+  margin-right: 80px;
+  margin-top: 10px;
+}
+.oval_mini3 {
+  margin-top: -29px;
+  margin-left: 138px;
+}
+.person_3_text {
+  position: absolute;
+  margin-top: -54px;
+  margin-left: 13px;
+}
+
+/*------------------------Person_4----Superhero-content-----------------------*/
+.person_4 {
+  width: 304px;
+  height: 139px;
+  background-image: url(comments/person4.png);
+  background-size: 98px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-position: right;
+  background-position-y: bottom;
+  align-items: center;
+  position: absolute;
+  margin-top: 441px;
+  margin-left: 835px;
+}
+.person_4_icon {
+  height: 53px;
+  position: relative;
+  width: 263px;
+
+  margin-right: 48px;
+  margin-top: 14px;
+}
+.oval_mini4 {
+  margin-top: -29px;
+  margin-left: 138px;
+}
+.person_4_text {
+  position: absolute;
+  width: 119px;
+  margin-top: -54px;
+  margin-left: 32px;
+}
+/*..................Third-main-contant.......................................*/
+/*.second-content {
+  min-height: 50vh;
+}*/
+.design {
+  position: relative;
+}
+.design-wrap {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.design-text {
+  margin-bottom: 118px;
+  flex-direction: column;
+  color: rgba(47, 40, 30, 1);
+}
+.design-image {
+  width: 44%;
+  display: block;
+}
+.design-image >img {
+  object-fit: cover;
+  margin-bottom: 150px;
+}
+.efforts {
+  font-weight: 500;
+}
+.design-title {
+  margin-right: 100px;
+  margin-bottom: 14px;
+}
+.design-p {
+  margin-bottom: 30px;
+}
+.makers-p, .alt-p {
+  margin-bottom: 25px;
+}
+.makers-title, .alt-title, .designers {
+  margin-bottom: 12px;
+}
+/*----------------------Fifth-main-content---------------------------------*/
+.market {
+  position: relative;
+}
+.market-text {
+  margin-bottom: 100px;
+  flex-direction: column;
+  color: rgba(47, 40, 30, 1);
+}
+.market-image { 
+  width: 40%;
+  display: block;
+}
+.market-image >img {
+  object-fit: cover;
+  margin-bottom: 120px;
+}
+.market.title {
+  margin-right: 100px;
+}
+.market-p {
+  margin-top: 22px;
+  margin-bottom: 30px;
+}
+/*----------------------------Forth-main-content----------------------------*/
+.product {
+ position: relative;
+}
+.product-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-text {
+  flex-direction: column;
+  color: rgba(47, 40, 30, 1);
+  float: right;
+}
+.product-image img{
+  display: inline;
+  position: relative;
+  width: 500;
+  margin-right: 103px;
+}
+.product-title {
+  margin-bottom: 14px;
+}
+.product-p {
+  margin-bottom: 30px;
+}
+.list {
+  display: inline;
+  position: relative;
+  list-style: none;
+}
+.list1 {
+  display: flex;
+  margin-bottom: 30px;
+  padding-left: 60px;
+}
+.product_text> ul > li::before {
+  content: "";
+  vertical-align: -14px;
+  list-style-image: url("image/botton.svg");
+}
